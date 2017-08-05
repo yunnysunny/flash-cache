@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive test/",
+    "test": "mocha --recursive --use_strict test/",
     "doc": "jsdoc2md lib/FlashCache.js > doc/api.md"
   },
   "repository": {
