@@ -1,0 +1,29 @@
+{
+  "name": "flash-cache",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test/",
+    "doc": "jsdoc2md lib/FlashCache.js > doc/api.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunnysunny/flash-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "memory"
+  ],
+  "author": "yunnysunny <yunnysunny@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yunnysunny/flash-cache/issues"
+  },
+  "homepage": "https://github.com/yunnysunny/flash-cache#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "jsdoc-to-markdown": "^3.0.0",
+    "mocha": "^3.5.0"
+  }
+}
