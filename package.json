@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "mocha --recursive --use_strict test/",
+    "bump_path": "npm version patch -m \"upgrade to %s\"",
     "doc": "jsdoc2md lib/FlashCache.js > doc/api.md"
   },
   "repository": {

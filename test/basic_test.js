@@ -15,6 +15,13 @@ describe('basic test',function() {
         cache.save('a','something');console.log('a',cache.get('a'));
         expect(cache.get('a')).to.equal('something');
     });
+    it('should get null value when expired',function(done) {
+        cache.save('b',111);
+        setTimeout(function() {
+            expect(cache.get('b')).to.be.null;
+            done();
+        },INTREVAL);
+    });
     it('save data to cache',function() {
         //console.time('save data');
         for (let i=0;i<TEST_LEN;i++) {
