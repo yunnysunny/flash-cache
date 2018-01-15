@@ -21,7 +21,7 @@ cache.save('a','the value');
 console.log(cache.get('a'));
 setTimeout(function() {
     console.log('young size',cache.young.size);//should get 0
-},1000);
+},1000+100);
 ```
 
 ## License

@@ -20,7 +20,7 @@ describe('basic test',function() {
         setTimeout(function() {
             expect(cache.get('b')).to.be.null;
             done();
-        },INTREVAL);
+        },INTREVAL+100);
     });
     it('save data to cache',function() {
         //console.time('save data');
