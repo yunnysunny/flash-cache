@@ -22,6 +22,12 @@ describe('basic test',function() {
             done();
         },INTREVAL+100);
     });
+    it('should get the instance of CacheElement success',function() {
+        cache.save('c','other');
+        const element = cache.getElement('c');
+        expect(element).to.be.not.null;
+        expect(element.value).to.be.equal('other');
+    });
     it('save data to cache',function() {
         //console.time('save data');
         for (let i=0;i<TEST_LEN;i++) {
