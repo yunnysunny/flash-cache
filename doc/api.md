@@ -26,7 +26,8 @@ The class of CacheElement
     * _instance_
         * [.hitRate](#FlashCache+hitRate)
         * [.save(key, value)](#FlashCache+save)
-        * [.get(key)](#FlashCache+get) ⇒ <code>any</code>
+        * [.getElement(key, useYoungOnly)](#FlashCache+getElement) ⇒ [<code>CacheElement</code>](#CacheElement)
+        * ~~[.get(key, [useYoungOnly])](#FlashCache+get) ⇒ <code>any</code>~~
     * _static_
         * [.FlashCache](#FlashCache.FlashCache)
             * [new FlashCache([option])](#new_FlashCache.FlashCache_new)
@@ -55,16 +56,31 @@ Save data to cache
 | key | <code>any</code> | 
 | value | <code>any</code> | 
 
+<a name="FlashCache+getElement"></a>
+
+### flashCache.getElement(key, useYoungOnly) ⇒ [<code>CacheElement</code>](#CacheElement)
+Get the CacheElement from FlashCache
+
+**Kind**: instance method of [<code>FlashCache</code>](#FlashCache)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| key | <code>\*</code> |  |  |
+| useYoungOnly | <code>boolean</code> | <code>false</code> | [useYoungOnly=false] When it is set true, it will not read old area. |
+
 <a name="FlashCache+get"></a>
 
-### flashCache.get(key) ⇒ <code>any</code>
+### ~~flashCache.get(key, [useYoungOnly]) ⇒ <code>any</code>~~
+***Deprecated***
+
 Get data from cache
 
 **Kind**: instance method of [<code>FlashCache</code>](#FlashCache)  
 
-| Param | Type |
-| --- | --- |
-| key | <code>any</code> | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| key | <code>any</code> |  |  |
+| [useYoungOnly] | <code>boolean</code> | <code>false</code> | When it is set true, it will not read old area. |
 
 <a name="FlashCache.FlashCache"></a>
 
