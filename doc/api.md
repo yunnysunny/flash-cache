@@ -28,6 +28,8 @@ The class of CacheElement
         * [.save(key, value)](#FlashCache+save)
         * [.getElement(key, useYoungOnly)](#FlashCache+getElement) ⇒ [<code>CacheElement</code>](#CacheElement)
         * ~~[.get(key, [useYoungOnly])](#FlashCache+get) ⇒ <code>any</code>~~
+        * [.clearAll()](#FlashCache+clearAll)
+        * [.remove(key)](#FlashCache+remove)
     * _static_
         * [.FlashCache](#FlashCache.FlashCache)
             * [new FlashCache([option])](#new_FlashCache.FlashCache_new)
@@ -81,6 +83,23 @@ Get data from cache
 | --- | --- | --- | --- |
 | key | <code>any</code> |  |  |
 | [useYoungOnly] | <code>boolean</code> | <code>false</code> | When it is set true, it will not read old area. |
+
+<a name="FlashCache+clearAll"></a>
+
+### flashCache.clearAll()
+Clear all the cache in old area and young area.
+
+**Kind**: instance method of [<code>FlashCache</code>](#FlashCache)  
+<a name="FlashCache+remove"></a>
+
+### flashCache.remove(key)
+Remove the element by key.
+
+**Kind**: instance method of [<code>FlashCache</code>](#FlashCache)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| key | <code>any</code> | The key you wanna remove |
 
 <a name="FlashCache.FlashCache"></a>
 
