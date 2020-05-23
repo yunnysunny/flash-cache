@@ -1,3 +1,6 @@
+## 0.4.0
+1. Add function of `clearAll` and `remove`, which can be clear all the cache content or remove a special content by key.
+
 ## 0.3.0
 
 1. Add the function of `getElement`, which will check whether the key is in the cache more accurately.
